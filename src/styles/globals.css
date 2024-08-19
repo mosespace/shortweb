@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --app-font: "Montserrat", sans-serif;
+  --app-font2: "Space Grotesk", sans-serif;
+}
+
+body {
+  font-family: var(--app-font);
+}
+
+
+.cards {
+  font-family: var(--app-font2);
+}
+
+/* #31B0B3 */
+
+@layer base {
+  :root {
+    --background: 0.00 0.00% 100.00%;
+    --foreground: 90.00 77.78% 3.53%;
+    --card: 85.71 41.18% 96.67%;
+    --card-foreground: 90.00 77.78% 3.53%;
+    --popover: 0.00 0.00% 100.00%;
+    --popover-foreground: 90.00 77.78% 3.53%;
+    --primary: 87.83 76.67% 35.29%;
+    --primary-foreground: 90.00 77.78% 3.53%;
+    --secondary: 88.57 42.86% 90.39%;
+    --secondary-foreground: 0.00 0.00% 0.00%;
+    --muted: 87.69 39.39% 93.53%;
+    --muted-foreground: 0.00 0.00% 40.00%;
+    --accent: 87.69 39.39% 93.53%;
+    --accent-foreground: 88.57 77.78% 5.29%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 87.86 42.42% 87.06%;
+    --input: 88.24 16.19% 79.41%;
+    --ring: 87.83 76.67% 35.29%;
+    --radius: 0.5rem;
+    --chart-1: 87.83 76.67% 35.29%
+    --chart-2: 87.69 51.09% 44.90%
+    --chart-3: 88.00 42.06% 58.04%
+    --chart-4: 87.63 41.76% 64.31%
+    --chart-5: 88.06 41.89% 70.98%
+  }
+
+  .dark {
+    --background: 0.00 0.00% 0.00%;
+    --foreground: 88.57 42.86% 90.39%;
+    --card: 90.00 23.08% 5.10%;
+    --card-foreground: 88.57 42.86% 90.39%;
+    --popover: 0.00 0.00% 0.00%;
+    --popover-foreground: 88.57 42.86% 90.39%;
+    --primary: 87.83 76.67% 35.29%;
+    --primary-foreground: 90.00 77.78% 3.53%;
+    --secondary: 88.16 77.78% 12.35%;
+    --secondary-foreground: 0.00 0.00% 100.00%;
+    --muted: 0.00 0.00% 9.80%;
+    --muted-foreground: 0.00 0.00% 50.20%;
+    --accent: 88.16 77.78% 12.35%;
+    --accent-foreground: 88.57 42.86% 90.39%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 87.86 77.78% 7.06%;
+    --input: 85.71 14.89% 18.43%;
+    --ring: 87.83 76.67% 35.29%;
+    --chart-1: 87.83 76.67% 35.29%
+    --chart-2: 87.69 76.47% 30.00%
+    --chart-3: 87.64 76.07% 22.94%
+    --chart-4: 88.00 75.76% 19.41%
+    --chart-5: 87.62 77.78% 15.88%
+    --radius: 0.5rem;
+
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Main Color Code: #3dbcbd */
+
+/* ----------------------------------------------loader------------------------------------ */
+.loader {
+  position: relative;
+  width: 33px;
+  height: 33px;
+  perspective: 67px;
+}
+
+.loader div {
+  width: 100%;
+  height: 100%;
+  background: #2f3545;
+  position: absolute;
+  left: 50%;
+  transform-origin: left;
+  animation: loader 2s infinite;
+}
+
+.loader div:nth-child(1) {
+  animation-delay: 0.15s;
+}
+
+.loader div:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.loader div:nth-child(3) {
+  animation-delay: 0.45s;
+}
+
+.loader div:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+.loader div:nth-child(5) {
+  animation-delay: 0.75s;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotateY(0deg);
+  }
+
+  50%,
+  80% {
+    transform: rotateY(-180deg);
+  }
+
+  90%,
+  100% {
+    opacity: 0;
+    transform: rotateY(-180deg);
+  }
+}
+
