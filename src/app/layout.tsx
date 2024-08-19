@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
-import { ThemeProvider } from "@/components/theme-provider";
 import "@/styles/globals.css";
 import { Toaster } from "sonner";
+import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const baseUrl = process.env.NEXT_PUBLIC_APP_URL as string;
 
@@ -71,6 +72,7 @@ export default function RootLayout({
           {children}
         </ThemeProvider>
         <Toaster position='bottom-right' closeButton expand={true} richColors />
+        <Analytics />
       </body>
     </html>
   );
