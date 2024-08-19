@@ -65,11 +65,15 @@ export default function Cards({
         className='w-full'
       >
         <TabsList className='flex gap-4 dark:bg-secondary'>
-          <TabsTrigger className='px-8' value='all'>
+          <TabsTrigger className='lg:px-8' value='all'>
             All
           </TabsTrigger>
           {categories.map((category) => (
-            <TabsTrigger className='px-8' key={category.id} value={category.id}>
+            <TabsTrigger
+              className='lg:px-8'
+              key={category.id}
+              value={category.id}
+            >
               {category.name}
             </TabsTrigger>
           ))}
