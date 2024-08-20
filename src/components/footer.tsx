@@ -13,28 +13,32 @@ export default function Footer() {
             <Link
               className='p-1 -m-1 group'
               aria-label='Follow on Twitter'
-              href='#_'
+              href='https://twitter.com/bantu_creative'
+              target="_blank"
             >
               <FaTwitter className='size-6 transition  fill-white hover:text-accent-500 md hydrated' />
             </Link>
             <Link
               className='p-1 -m-1 group'
               aria-label='Follow on Instagram'
-              href='#_'
+              href='https://instagram.com/typifymedia'
+              target="_blank"
             >
               <FaInstagram className='size-6 transition  fill-white hover:text-accent-500 md hydrated' />
             </Link>
             <Link
               className='p-1 -m-1 group'
               aria-label='Follow on GitHub'
-              href='#_'
+              href='https://github.com/mosespace'
+              target="_blank"
             >
               <FaGithub className='size-6 transition  fill-white hover:text-accent-500 md hydrated' />
             </Link>
             <Link
               className='p-1 -m-1 group'
               aria-label='Follow on LinkedIn'
-              href='#_'
+              href='https://linkedin.com/kisakyemoses'
+              target="_blank"
             >
               <FaLinkedin className='size-6 transition  fill-white hover:text-accent-500 md hydrated' />
             </Link>
@@ -58,18 +62,20 @@ export default function Footer() {
             <ul role='list' className='mt-4 space-y-2'>
               <li>
                 <Link
-                  href='https://twitter.com/lexingtonthemes'
+                  href='https://twitter.com/bantu_creative'
                   className='hover:dark:text-white text-white/30'
+                  target="_blank"
                 >
-                  @lexingtonthemes
+                  @kisakye_moses
                 </Link>
               </li>
               <li>
                 <Link
-                  href='https://twitter.com/Mike_Andreuzza'
+                  href='https://twitter.com/bantu_creative'
                   className='hover:dark:text-white text-white/30'
+                  target="_blank"
                 >
-                  @Mike_Andreuzza
+                  @mosespace
                 </Link>
               </li>
             </ul>
@@ -81,10 +87,11 @@ export default function Footer() {
             <ul role='list' className='mt-4 space-y-2'>
               <li>
                 <Link
-                  href='https://lexingtonthemes.com/'
+                  href='https://resources.mosespace.com/'
                   className='hover:dark:text-white text-white/30'
+                  target="_blank"
                 >
-                  Lexington Themes
+                  Developer Resources
                 </Link>
               </li>
             </ul>
