@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -14,7 +14,6 @@ body {
   font-family: var(--app-font);
 }
 
-
 .cards {
   font-family: var(--app-font2);
 }
@@ -23,60 +22,79 @@ body {
 
 @layer base {
   :root {
-    --background: 0.00 0.00% 100.00%;
-    --foreground: 90.00 77.78% 3.53%;
-    --card: 85.71 41.18% 96.67%;
-    --card-foreground: 90.00 77.78% 3.53%;
-    --popover: 0.00 0.00% 100.00%;
-    --popover-foreground: 90.00 77.78% 3.53%;
-    --primary: 87.83 76.67% 35.29%;
-    --primary-foreground: 90.00 77.78% 3.53%;
-    --secondary: 88.57 42.86% 90.39%;
-    --secondary-foreground: 0.00 0.00% 0.00%;
-    --muted: 87.69 39.39% 93.53%;
-    --muted-foreground: 0.00 0.00% 40.00%;
-    --accent: 87.69 39.39% 93.53%;
-    --accent-foreground: 88.57 77.78% 5.29%;
+    --background: 0 0% 100%;
+    --foreground: 40.91 84.62% 5.1%;
+
+    --primary: 41.6 91.09% 51.57%;
+    --primary-foreground: 40.91 84.62% 5.1%;
+
+    --card: 43.64 84.62% 97.45%;
+    --card-foreground: 40.91 84.62% 5.1%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 40.91 84.62% 5.1%;
+
+    --secondary: 41.82 89.19% 92.75%;
+    --secondary-foreground: 0 0% 0%;
+
+    --muted: 41.74 92% 95.1%;
+    --muted-foreground: 0 0% 40%;
+
+    --accent: 41.74 92% 95.1%;
+    --accent-foreground: 40.59 85% 7.84%;
+
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
-    --border: 87.86 42.42% 87.06%;
-    --input: 88.24 16.19% 79.41%;
-    --ring: 87.83 76.67% 35.29%;
+
+    --border: 41.33 91.84% 90.39%;
+    --input: 40.71 29.79% 81.57%;
+    --ring: 41.6 91.09% 51.57%;
+
+    --chart-1: 41.6 91.09% 51.57%;
+    --chart-2: 41.56 91.43% 58.82%;
+    --chart-3: 41.51 91.25% 68.63%;
+    --chart-4: 41.61 91.18% 73.33%;
+    --chart-5: 41.58 90.99% 78.24%;
+
     --radius: 0.5rem;
-    --chart-1: 87.83 76.67% 35.29%
-    --chart-2: 87.69 51.09% 44.90%
-    --chart-3: 88.00 42.06% 58.04%
-    --chart-4: 87.63 41.76% 64.31%
-    --chart-5: 88.06 41.89% 70.98%
   }
 
   .dark {
-    --background: 0.00 0.00% 0.00%;
-    --foreground: 88.57 42.86% 90.39%;
-    --card: 90.00 23.08% 5.10%;
-    --card-foreground: 88.57 42.86% 90.39%;
-    --popover: 0.00 0.00% 0.00%;
-    --popover-foreground: 88.57 42.86% 90.39%;
-    --primary: 87.83 76.67% 35.29%;
-    --primary-foreground: 90.00 77.78% 3.53%;
-    --secondary: 88.16 77.78% 12.35%;
-    --secondary-foreground: 0.00 0.00% 100.00%;
-    --muted: 0.00 0.00% 9.80%;
-    --muted-foreground: 0.00 0.00% 50.20%;
-    --accent: 88.16 77.78% 12.35%;
-    --accent-foreground: 88.57 42.86% 90.39%;
+    --background: 0 0% 0%;
+    --foreground: 41.82 89.19% 92.75%;
+
+    --primary: 41.6 91.09% 51.57%;
+    --primary-foreground: 40.91 84.62% 5.1%;
+
+    --card: 46.67 31.03% 5.69%;
+    --card-foreground: 41.82 89.19% 92.75%;
+
+    --popover: 0 0% 0%;
+    --popover-foreground: 41.82 89.19% 92.75%;
+
+    --secondary: 41.54 84.78% 18.04%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 9.8%;
+    --muted-foreground: 0 0% 50.2%;
+
+    --accent: 41.54 84.78% 18.04%;
+    --accent-foreground: 41.82 89.19% 92.75%;
+
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
-    --border: 87.86 77.78% 7.06%;
-    --input: 85.71 14.89% 18.43%;
-    --ring: 87.83 76.67% 35.29%;
-    --chart-1: 87.83 76.67% 35.29%
-    --chart-2: 87.69 76.47% 30.00%
-    --chart-3: 87.64 76.07% 22.94%
-    --chart-4: 88.00 75.76% 19.41%
-    --chart-5: 87.62 77.78% 15.88%
-    --radius: 0.5rem;
 
+    --border: 41.33 84.91% 10.39%;
+    --input: 41.74 22.33% 20.2%;
+    --ring: 41.6 91.09% 51.57%;
+
+    --chart-1: 41.6 91.09% 51.57%;
+    --chart-2: 41.78 85.65% 43.73%;
+    --chart-3: 41.63 85.96% 33.53%;
+    --chart-4: 41.61 86.11% 28.24%;
+    --chart-5: 41.58 84.87% 23.33%;
+
+    --radius: 0.5rem;
   }
 }
 
@@ -145,4 +163,3 @@ body {
     transform: rotateY(-180deg);
   }
 }
-
