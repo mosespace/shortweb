@@ -3,6 +3,9 @@ import { Toaster } from "sonner";
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
 import { ThemeProvider } from "@/components/theme-provider";
+import { getServerSession } from "next-auth";
+import { authOptions } from "@/connections/auth";
+import Providers from "@/providers/providers";
 
 const baseUrl = process.env.NEXT_PUBLIC_APP_URL as string;
 
@@ -55,24 +58,16 @@ export const metadata: Metadata = {
   manifest: `${baseUrl}/site.webmanifest`,
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const session = await getServerSession(authOptions);
   return (
     <html lang='en'>
       <body>
-        <ThemeProvider
-          attribute='class'
-          defaultTheme='light'
-          enableSystem
-          disableTransitionOnChange
-        >
-          {children}
-        </ThemeProvider>
-        <Toaster position='bottom-right' closeButton expand={true} richColors />
-        <Analytics />
+        <Providers session={session}>{children}</Providers>
       </body>
     </html>
   );
